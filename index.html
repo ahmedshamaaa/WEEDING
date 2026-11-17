@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f2ea" />
+  <title>دعوة زفاف — أحمد & نوران</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body:before,body:after{display:none}
+    .letter{background:linear-gradient(135deg,#fffaf4d9,#fffaf4b8),url('couple-background.png') center/cover no-repeat}
+    .music-btn{position:fixed;top:18px;left:18px;z-index:20;width:42px;height:42px;border:1px solid #b99461;background:#fffaf4dd;color:#4d3b35;border-radius:50%;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 5px 16px #6f51421f;transition:transform .2s,background .2s}.music-btn:hover{transform:scale(1.08);background:#76564d;color:#fffaf4}.music-btn.muted{position:fixed}.music-btn.muted:after{content:"";position:absolute;width:27px;height:2px;background:#a97870;transform:rotate(-45deg);left:7px;top:19px;border-radius:2px}
+  </style>
+</head>
+<style>
+.celebration{position:fixed;inset:0;z-index:10;pointer-events:none;overflow:hidden;opacity:0;transition:opacity .5s}.celebration.active{opacity:1}.rain{position:absolute;inset:0}.rain span{position:absolute;left:var(--x);top:-40px;color:#b97870;font-size:20px;animation:fall var(--duration) var(--delay) linear infinite;filter:drop-shadow(0 3px 3px #6f51422b)}.rain span:nth-child(3n){color:#c69b5c;font-size:14px}.rain span:nth-child(3n+1){color:#9f746e}.fireworks{position:absolute;inset:0}.fireworks i{position:absolute;width:5px;height:5px;border-radius:50%;left:var(--left,20%);top:var(--top,25%);background:#d19a68;color:#d19a68;animation:burst 3.2s ease-out infinite}.fireworks i:nth-child(2){--left:78%;--top:22%;animation-delay:1.1s;background:#a97870;color:#a97870}.fireworks i:nth-child(3){--left:50%;--top:12%;animation-delay:2.1s;background:#c69b5c;color:#c69b5c}@keyframes fall{0%{transform:translate3d(0,-50px,0) rotate(0deg);opacity:0}10%{opacity:1}100%{transform:translate3d(var(--drift),110vh,0) rotate(540deg);opacity:.15}}@keyframes burst{0%,100%{transform:scale(1);box-shadow:0 0 0 0 currentColor;opacity:.15}35%{transform:scale(1.5);box-shadow:0 -42px 0 -2px currentColor,30px -30px 0 -2px currentColor,42px 0 0 -2px currentColor,30px 30px 0 -2px currentColor,0 42px 0 -2px currentColor,-30px 30px 0 -2px currentColor,-42px 0 0 -2px currentColor,-30px -30px 0 -2px currentColor;opacity:.8}70%{opacity:0}}@media (prefers-reduced-motion:reduce){.rain span,.fireworks i{animation:none}.celebration{display:none}}
+</style>
+<body>
+  <div class="celebration" id="celebration" aria-hidden="true"><div class="fireworks"><i></i><i></i><i></i></div><div class="rain" aria-hidden="true"></div></div>
+  <main class="invite-shell">
+    <section class="hero" id="hero">
+      <div class="sparkles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="eyebrow">بكل الحب ندعوكم لمشاركتنا</p>
+      <div class="envelope-wrap" id="envelopeWrap">
+        <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="افتح الدعوة">
+          <div class="envelope-back"></div>
+          <div class="letter">
+            <p class="mini">دعوة زفاف</p>
+            <h1>أحمد <span>&amp;</span> نوران</h1>
+            <p class="date">١٤ · ٠١ · ٢٠٢٧</p>
+          </div>
+          <div class="flap"></div>
+          <div class="seal">♥</div>
+        </div>
+      </div>
+      <p class="hint">اضغط لفتح الدعوة</p>
+      <button class="open-btn" id="openBtn">افتح الدعوة <span>↓</span></button>
+      <audio id="weddingSong" preload="metadata" loop><source src="مكس عروس سمو بسم الله عليها + ادخلي عمري, - حسين الجسمي 2027 للطلب بالاسماء.mp3" type="audio/mpeg" /></audio>
+    </section>
+
+    <section class="details" id="details" aria-hidden="true">
+      <div class="ornament">✦</div>
+      <p class="eyebrow">يسعدنا حضوركم ومشاركتنا</p>
+      <h2>أحمد <span>&amp;</span> نوران</h2>
+      <p class="intro">في ليلة يملؤها الحب والفرح، نحتفل ببداية حكايتنا الجديدة. وجودكم بيننا هو أجمل هدية.</p>
+      <div class="info-grid">
+        <article><span class="icon">◷</span><h3>الموعد</h3><p>الخميس، ١٤ يناير ٢٠٢٧<br>الساعة ٧:٠٠ مساءً</p></article>
+        <article><span class="icon">⌖</span><h3>المكان</h3><p>دار المشاة<br>قاعة الفيروز</p></article>
+      </div>
+      <div class="divider">❧</div>
+      <p class="closing">ننتظركم بكل شوق<br><strong>محبتكم، أحمد ونوران</strong></p>
+      <a class="map-btn" href="https://maps.google.com/?q=30.079082,31.301714" target="_blank" rel="noopener">عرض الموقع <span>↗</span></a>
+      <button class="music-btn" id="musicBtn" type="button" aria-label="تشغيل الموسيقى" title="تشغيل الموسيقى">♫</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
